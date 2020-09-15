@@ -32,8 +32,8 @@ public static void main(String[] args) {
         //asigna a texto cadena sin el punto
     	texto += cadena.substring(0, cadena.length()-1);
         
-        
-    	HashMap<Character, Integer> percentage = new HashMap();
+        //el caracter es la clave y las repeticiones el valor almacenado
+        HashMap<Character, Integer> percentage = new HashMap();
     	Integer total = 0;
     	for (Character c : texto.toCharArray()) {
             if (percentage.containsKey(c)) {
