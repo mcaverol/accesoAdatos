@@ -47,8 +47,9 @@ public static void main(String[] args) {
             //System.out.println(percentage);
     	}
 
-    	for (HashMap.Entry<Character, Integer> entry : percentage.entrySet()) {
-        System.out.println("El caracter " + entry.getKey() + " aparece un " + entry.getValue()*100.0/total + "% de las veces");
+        //recorremos el hashmap con un entry para poder mostrar la key y el value
+    	for (HashMap.Entry<Character, Integer> e : percentage.entrySet()) {            
+          System.out.println("El caracter " + e.getKey() + " aparece un " + e.getValue()*100.0/total + "% de las veces");
     	}
 
     }
